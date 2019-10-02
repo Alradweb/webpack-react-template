@@ -1,0 +1,20 @@
+@import "./styles/variables";
+//==============
+//
+//==============
+@font-face {
+  font-family: 'Pacifico';
+  src: local('Pacifico'); /* First, look for the client */
+  src: url('/assets/fonts/Pacifico.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/Pacifico.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/assets/fonts/Pacifico.woff') format('woff'), /* Pretty Modern Browsers */ url('/assets/fonts/Pacifico.ttf') format('truetype')
+}
+
+.my-app {
+  font-family: @mainFont, 'Arial', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: @danger-color;
+  line-height: @mainLineHeight;
+}

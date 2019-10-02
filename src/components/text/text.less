@@ -1,0 +1,30 @@
+@import "../../styles/variables.less";
+
+@base-color: @primary-color;
+h2 {
+  color: @base-color;
+}
+
+h3 {
+  color: @base-color;
+}
+
+h4 {
+  color: @base-color;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bordered {
+  border-bottom: 3px dashed @success-color;
+}
+
+.success {
+  color: @primary-color;
+  .bordered();
+}
+
